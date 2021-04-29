@@ -106,9 +106,16 @@ IMPORTANT DETAIL: You may not use the arithmetic operator * in this function. To
 Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testMultiplyArray() function and see if the test passes.*/
 
 // Write your code here
-function multiplyArray(multArr) { //eslint-disable-line
+  function multiplyArray(multArr) { //eslint-disable-line
+  
+    let mA = multiply(multArr[0], multiply(multArr[1], multArr[2])[0])[0];
 
+    return [mA, `The numbers ${multArr[0]},${multArr[1]},${multArr[2]} have a product of ${mA}.`]
 }
+
+// Here is the test for multiplyArray(); uncomment it to run it
+testMultiplyArray(testArray);
+
 
 // Here is the test for multiplyArray(); uncomment it to run it
 // testMultiplyArray(testArray);
