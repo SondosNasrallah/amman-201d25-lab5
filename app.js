@@ -78,12 +78,8 @@ Test this function by hand in the console to get it working, and when you think 
    let testArray = [2, 3, 4]; //eslint-disable-line
 
    function sumArray(sumArr) { //eslint-disable-line
-  
-  //   let sA = sum(sumArr[0],sumArr[1])[0];
-  //   let sB = sum(sA,sumArr[2])[0];
-  //      return [`${sumArr[0]},${sumArr[1]},${sumArr[2]} was passed in as an array of numbers, and ${sB} is their sum.`];
 
-  let result1 = sum(sumArr[0],sumArr[1])[0];
+    let result1 = sum(sumArr[0],sumArr[1])[0];
     let sumResult = sum(result1,sumArr[2])[0];
     return[sumResult,`${sumArr[0]},${sumArr[1]},${sumArr[2]} was passed in as an array of numbers, and ${sumResult} is their sum.`];
    
@@ -107,6 +103,7 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 function multiplyArray(multArr) { //eslint-disable-line
+  
 
 }
 
